@@ -4,7 +4,10 @@
     <head th:replace="layout/plantilla :: head"> <!-- se da la dirección del docuemnto donde esta el archivo plantilla y se le debe indicar el bloque-->
     </head>
     <body>
-        <header th:replace="layout/plantilla :: header" /> 
-        <footer th:replace="layout/plantilla :: footer" />
+        <header th:replace="layout/plantilla :: header" />
+        
+        <section th:replace="categoria/fragmentos :: editarCategoria" />
+        
+        <footer th:replace="layout/plantilla :: footer"></footer>
     </body>
 </html>
