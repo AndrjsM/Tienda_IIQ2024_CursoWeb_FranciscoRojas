@@ -6,6 +6,7 @@ package com.tienda.domain;
 
 import jakarta.persistence.*; //Solo en desarrollo para produccion se debe colocar las librerías que se requeiran
 import java.io.Serializable;
+import java.util.List;
 import lombok.Data;
 
 /**
@@ -24,6 +25,10 @@ public class Categoria implements Serializable{
     private String descripcion;
     private String rutaImagen;
     private boolean activo;
+    
+    @OneToMany
+    @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
+    List<Producto> productos;
 
     public Categoria() {
     }
