@@ -9,10 +9,7 @@ import java.io.Serializable;
 import java.util.List;
 import lombok.Data;
 
-/**
- *
- * @author andrj
- */
+
 @Data //Crea automaticamente metodos
 @Entity
 @Table(name="categoria")
